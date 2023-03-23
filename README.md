@@ -1,6 +1,6 @@
 # MIST4610 Group Project
 ## Team Name and Members
-We are team ____. <br>
+We are team 21482_4. <br>
 
 ### Team Members <br>
 * [Jimmy Chancellor](____) <br>
@@ -18,3 +18,4 @@ We are team ____. <br>
 ## Ten Queries
 
 ## Database Information
+The name of the database is ns_21482_4.
