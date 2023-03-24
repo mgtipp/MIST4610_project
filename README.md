@@ -3,8 +3,8 @@
 We are team 21482_4. <br>
 
 ### Team Members <br>
-* [Jimmy Chancellor](____) <br>
-* [Austin Crispo](____) <br>
+* [Jimmy Chancellor](https://JChancello/Groupproject1) <br>
+* [Austin Crispo](https://github.com/austincrispo/MIST-4610-Project-1) <br>
 * [Clayton Hoarell](____) <br>
 * [Tabea Lent](____) <br>
 * [Mary Grace Tippett](https://github.com/mgtipp/MIST4610_project)
