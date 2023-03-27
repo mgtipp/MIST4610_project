@@ -15,6 +15,71 @@ We are team 21482_4. <br>
 <img width="599" alt="Screenshot 2023-03-27 at 2 14 16 PM" src="https://user-images.githubusercontent.com/82818412/228030133-685edc9c-4ce4-4d5b-b8fd-081468b0292e.png">
 
 ## Data Dictionary
+Table: <b>TargetStore</b>
+| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| ------------ | ------------- | ------------- | ------------- | ------ | --- |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+  
+Table: <b>Employee</b>
+| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| ------------ | ------------- | ------------- | ------------- | ------ | --- |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+
+Table: <b>PurchaseOrder</b>
+| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| ------------ | ------------- | ------------- | ------------- | ------ | --- |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+  
+Table: <b>Shipment</b>
+| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| ------------ | ------------- | ------------- | ------------- | ------ | --- |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+  
+Table: <b>Supplier</b>
+| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| ------------ | ------------- | ------------- | ------------- | ------ | --- |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+  
+Table: <b>Warehouse</b>
+| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| ------------ | ------------- | ------------- | ------------- | ------ | --- |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+  
+Table: <b>Inventory</b>
+| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| ------------ | ------------- | ------------- | ------------- | ------ | --- |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+  
+Table: <b>Products</b>
+| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| ------------ | ------------- | ------------- | ------------- | ------ | --- |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+  
+Table: <b>OrderDetails</b>
+| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| ------------ | ------------- | ------------- | ------------- | ------ | --- |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+  
+Table: <b>ProductLocation</b>
+| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| ------------ | ------------- | ------------- | ------------- | ------ | --- |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+  
+Table: <b>ProductType</b>
+| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| ------------ | ------------- | ------------- | ------------- | ------ | --- |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
+| Content Cell | Content Cell  | Content Cell  | Content Cell  |
 
 ## Ten Queries
 
