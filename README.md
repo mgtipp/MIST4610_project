@@ -12,6 +12,7 @@ We are team 21482_4. <br>
 ## Problem Description
 
 ## Data Model
+<img width="599" alt="Screenshot 2023-03-27 at 2 14 16 PM" src="https://user-images.githubusercontent.com/82818412/228030133-685edc9c-4ce4-4d5b-b8fd-081468b0292e.png">
 
 ## Data Dictionary
 
