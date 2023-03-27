@@ -12,7 +12,7 @@ We are team 21482_4. <br>
 ## Problem Description
 
 ## Data Model
-<img width="599" alt="Screenshot 2023-03-27 at 2 14 16 PM" src="https://user-images.githubusercontent.com/82818412/228030133-685edc9c-4ce4-4d5b-b8fd-081468b0292e.png">
+<img width="643" alt="Screenshot 2023-03-27 at 4 01 33 PM" src="https://user-images.githubusercontent.com/82818412/228053365-1a7b0abc-60f4-4033-8270-cee07b2c1290.png">
 
 ## Data Dictionary
 Table: <b>TargetStore</b>
