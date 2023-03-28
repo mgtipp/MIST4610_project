@@ -20,9 +20,9 @@ Table: <b>Employee</b>
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | employeeID | Unique sequential number identifying each employee | INT | | | PK |
 | storeID | Unique sequential number identifying each store | INT | | | FK (ref. TargetStore) |
-| empName
-| empPhone
-| jobTitle
+| empName | The employee's first and last name | Text | 45 |
+| empPhone | Employee's primary phone number | Text | 45 | (999)999-9999 |
+| jobTitle | Employee's primary work position | Text | 45 |
 
 Table: <b>Inventory</b>
 | Column Name  | Description   | Data Type     | Size          | Format | Key |
@@ -30,8 +30,8 @@ Table: <b>Inventory</b>
 | inventoryID | Unique sequential number identifying each inventory | INT | | | PK |
 | storeID | Unique sequential number identifying each store | INT | | | FK (ref. TargetStore) |
 | productID | Unique sequential number identifying each product | INT | | | FK (ref. Products) |
-| numInStock
-| maxStock
+| numInStock | Quantity of products in stock | INT |
+| maxStock | Maximum quantity of products possible | INT | 
 
 Table: <b>OrderDetails</b>
 | Column Name  | Description   | Data Type     | Size          | Format | Key |
@@ -39,32 +39,32 @@ Table: <b>OrderDetails</b>
 | orderDetailsID | Unique sequential number identifying each order detail entity | INT | | | PK |
 | orderID | Unique sequential number identifying each order | INT | | | FK (ref. PurchaseOrder) |
 | productID | Unique sequential number identifying each product | INT | | | FK (ref. Products) |
-| orderQuantity
-| priceEach
+| orderQuantity | The number of products ordered | INT |
+| priceEach | The price of each product ordered | DECIMAL(5,2) |
   
 Table: <b>Products</b>
 | Column Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | productID | Unique sequential number identifying each product | INT | | | PK |
-| productName | 
-| productDesc
-| buyPrice
-| MSRP
+| productName | The product's name | Text | 45 |
+| productDesc | The product's description | Text | 45 |
+| buyPrice | The price bought at wholesale | DECIMAL(5,2) |
+| MSRP | The manufacturer's suggested retail price | DECIMAL(5,2) |
   
 Table: <b>ProductLocation</b>
 | Column Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | prodLocID | Unique sequential number identifying each product location | INT | | | PK |
 | productID | Unique sequential number identifying each product | INT | | | FK (ref. Products) |
-| typeID
-| aisleName
-| aisleNum
+| typeID | Unique sequential number identifying each product type | INT | | | FK (ref. ProductType) |
+| aisleName | Name of the aisle where product is located | Text | 45 |
+| aisleNum | Aisle number where product is located | INT |
   
 Table: <b>ProductType</b>
 | Column Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | typeID | Unique sequential number identifying each product type | INT | | | PK |
-| typeName | 
+| typeName | The product type's name | Text | 45 |
 
 Table: <b>PurchaseOrder</b>
 | Column Name  | Description   | Data Type     | Size          | Format | Key |
@@ -72,42 +72,42 @@ Table: <b>PurchaseOrder</b>
 | orderID | Unique sequential number identifying each order | INT | | | PK |
 | storeID | Unique sequential number identifying each store | INT | | | FK (ref. TargetStore) |
 | shipmentID | Unique sequential number identifying each shipment | INT | | | FK (ref. Shipment) |
-| purchaserName
-| purchaserContact
-| orderDate
+| purchaserName | The first and last name of the purchaser | Text | 45 |
+| purchaserContact | The purchaser's primary phone number | Text | 45 | (999)999-9999 |
+| orderDate | The date the purchase was ordered | DATE | | YYYY/MM/DD |
 
 Table: <b>Shipment</b>
 | Column Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | shipmentID | Unique sequential number identifying each shipment | INT | | | PK |
 | supplierID | Unique sequential number identifying each supplier | INT | | | FK (ref. Supplier) |
-| shipmentName
-| dateShipped
-| expectedDelivery
+| shipmentName | The name of the shipment | Text | 45 |
+| dateShipped | The date the order was shipped | DATE | | YYYY/MM/DD |
+| expectedDelivery | The expected delivery date | DATE | | YYYY/MM/DD |
   
 Table: <b>Supplier</b>
 | Column Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | supplierID | Unique sequential number identifying each supplier | INT | | | PK |
-| supplierName | 
-| supplierNumber
+| supplierName | The name of the supplier | Text | 45 |
+| supplierNumber | The supplier's primary phone number | Text | 45 | (999)999-9999 |
 
 Table: <b>TargetStore</b>
 | Column Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | storeID | Unique sequential number identifying each store | INT  | | | PK |
-| storeAddress | 
-| storePhone
-| storeProductCap
+| storeAddress | The physical address of the store | Text | 45 |
+| storePhone | Store's primary phone number | Text | 45 | (999)999-9999 |
+| storeProductCap | The store's product capacity | INT |
 
 Table: <b>Warehouse</b>
 | Column Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | warehouseID | Unique sequential number identifying each warehouse | INT | | | PK |
 | supplierID | Unique sequential number identifying each supplier | INT | | | FK (ref. Supplier) |
-| warehouseAddress
-| warehousePhone
-| warehouseCap
+| warehouseAddress | The physical address of the warehouse | Text | 45 |
+| warehousePhone | Warehouse's primary phone number | Text | 45 | (999)999-9999 |
+| warehouseCap | The warehouse's product capacity | INT |
 
 ## Ten Queries
 
