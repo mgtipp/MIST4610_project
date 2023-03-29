@@ -47,7 +47,7 @@ Table: <b>Products</b>
 | Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | productID | Unique sequential number identifying each product | INT | | | PK |
-| productName | The product's name | Text | 45 |
+| productName | The product's name | VARCHAR | 45 |
 | productDesc | The product's description | VARCHAR | 45 |
 | buyPrice | The price bought at wholesale | DECIMAL(5,2) |
 | MSRP | The manufacturer's suggested retail price | DECIMAL(5,2) |
