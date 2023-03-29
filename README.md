@@ -17,7 +17,7 @@ Our group created a data model for the inventory management system of a Target s
 
 ## Data Dictionary
 Table: <b>Employee</b>
-| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | employeeID | Unique sequential number identifying each employee | INT | | | PK |
 | storeID | Unique sequential number identifying each store | INT | | | FK (ref. TargetStore) |
@@ -26,7 +26,7 @@ Table: <b>Employee</b>
 | jobTitle | Employee's primary work position | VARCHAR | 45 |
 
 Table: <b>Inventory</b>
-| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | inventoryID | Unique sequential number identifying each inventory | INT | | | PK |
 | storeID | Unique sequential number identifying each store | INT | | | FK (ref. TargetStore) |
@@ -35,7 +35,7 @@ Table: <b>Inventory</b>
 | maxStock | Maximum quantity of products possible | INT | 
 
 Table: <b>OrderDetails</b>
-| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | orderDetailsID | Unique sequential number identifying each order detail entity | INT | | | PK |
 | orderID | Unique sequential number identifying each order | INT | | | FK (ref. PurchaseOrder) |
@@ -44,7 +44,7 @@ Table: <b>OrderDetails</b>
 | priceEach | The price of each product ordered | DECIMAL(5,2) |
   
 Table: <b>Products</b>
-| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | productID | Unique sequential number identifying each product | INT | | | PK |
 | productName | The product's name | Text | 45 |
@@ -53,7 +53,7 @@ Table: <b>Products</b>
 | MSRP | The manufacturer's suggested retail price | DECIMAL(5,2) |
   
 Table: <b>ProductLocation</b>
-| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | prodLocID | Unique sequential number identifying each product location | INT | | | PK |
 | productID | Unique sequential number identifying each product | INT | | | FK (ref. Products) |
@@ -62,13 +62,13 @@ Table: <b>ProductLocation</b>
 | aisleNum | Aisle number where product is located | INT |
   
 Table: <b>ProductType</b>
-| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | typeID | Unique sequential number identifying each product type | INT | | | PK |
 | typeName | The product type's name | VARCHAR | 45 |
 
 Table: <b>PurchaseOrder</b>
-| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | orderID | Unique sequential number identifying each order | INT | | | PK |
 | storeID | Unique sequential number identifying each store | INT | | | FK (ref. TargetStore) |
@@ -78,7 +78,7 @@ Table: <b>PurchaseOrder</b>
 | orderDate | The date the purchase was ordered | DATETIME | | YYYY/MM/DD |
 
 Table: <b>Shipment</b>
-| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | shipmentID | Unique sequential number identifying each shipment | INT | | | PK |
 | supplierID | Unique sequential number identifying each supplier | INT | | | FK (ref. Supplier) |
@@ -87,14 +87,14 @@ Table: <b>Shipment</b>
 | expectedDelivery | The expected delivery date | DATETIME | | YYYY/MM/DD |
   
 Table: <b>Supplier</b>
-| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | supplierID | Unique sequential number identifying each supplier | INT | | | PK |
 | supplierName | The name of the supplier | VARCHAR | 45 |
 | supplierNumber | The supplier's primary phone number | VARCHAR | 45 | (999)999-9999 |
 
 Table: <b>TargetStore</b>
-| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | storeID | Unique sequential number identifying each store | INT  | | | PK |
 | storeAddress | The physical address of the store | VARCHAR | 45 |
@@ -102,7 +102,7 @@ Table: <b>TargetStore</b>
 | storeProductCap | The store's product capacity | INT |
 
 Table: <b>Warehouse</b>
-| Column Name  | Description   | Data Type     | Size          | Format | Key |
+| Name  | Description   | Data Type     | Size          | Format | Key |
 | ------------ | ------------- | ------------- | ------------- | ------ | --- |
 | warehouseID | Unique sequential number identifying each warehouse | INT | | | PK |
 | supplierID | Unique sequential number identifying each supplier | INT | | | FK (ref. Supplier) |
