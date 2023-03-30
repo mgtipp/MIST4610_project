@@ -79,7 +79,7 @@ Table: <b>PurchaseOrder</b>
 | shipmentID | Unique sequential number identifying each shipment | INT | | | FK (ref. Shipment) |
 | purchaserName | The first and last name of the purchaser | VARCHAR | 45 |
 | purchaserContact | The purchaser's primary phone number | VARCHAR | 45 | (999)999-9999 |
-| orderDate | The date the purchase was ordered | DATETIME | | MM/DD/YYYY |
+| orderDate | The date the purchase was ordered | DATETIME | | YYYY-MM-DD |
 
 Table: <b>Shipment</b>
 | Name  | Description   | Data Type     | Size          | Format | Key |
@@ -87,8 +87,8 @@ Table: <b>Shipment</b>
 | shipmentID | Unique sequential number identifying each shipment | INT | | | PK |
 | supplierID | Unique sequential number identifying each supplier | INT | | | FK (ref. Supplier) |
 | shipmentName | The name of the shipment | VARCHAR | 45 |
-| dateShipped | The date the order was shipped | DATETIME | | MM/DD/YYYY |
-| expectedDelivery | The expected delivery date | DATETIME | | MM/DD/YYYY |
+| dateShipped | The date the order was shipped | DATETIME | | YYYY-MM-DD |
+| expectedDelivery | The expected delivery date | DATETIME | | YYYY-MM-DD |
   
 Table: <b>Supplier</b>
 | Name  | Description   | Data Type     | Size          | Format | Key |
