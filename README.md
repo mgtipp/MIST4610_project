@@ -143,5 +143,17 @@ Return the name and phone number of employees who are managers or assistant mana
 <img width="482" alt="Screenshot 2023-03-30 at 4 49 35 PM" src="https://user-images.githubusercontent.com/82818412/228961134-afceefea-afec-4a4d-bd7a-bf641a076521.png"> <br>
 <img width="317" alt="Screenshot 2023-03-30 at 4 52 01 PM" src="https://user-images.githubusercontent.com/82818412/228961631-3c3bf06e-5eec-4c3a-aca3-dc6b86a9c63d.png">
 
+### TP_Q4
+Return the total cost of restocking items for all stores. <br>
+<b>Justification:</b> In order for the store to properly make financial budgets and set goals for the year it is useful to know what the total expenses related to inventory will be. An upper manager could use this data in order to forecast. <br> <br>
+<img width="836" alt="Screenshot 2023-03-30 at 5 11 14 PM" src="https://user-images.githubusercontent.com/82818412/228965449-0b6d8864-d4c0-4c01-9673-2e639e69f558.png"> <br>
+<img width="302" alt="Screenshot 2023-03-30 at 5 11 58 PM" src="https://user-images.githubusercontent.com/82818412/228965589-b3bce076-67eb-4456-9ac9-789a4206ebe7.png">
+
+### TP_Q5
+Return the purchaser name, date ordered, and total price for those orders that were purchased for more than $500. <br>
+<b>Justification:</b> It's important for an upper level Target manager to see which purchasers are spending the most money so that they can attempt to cut costs at those stores and make larger profits. <br> <br>
+<img width="640" alt="Screenshot 2023-03-30 at 5 16 46 PM" src="https://user-images.githubusercontent.com/82818412/228966431-e895e644-b4c7-4ae3-9bf3-16aa3dfffbe1.png"> <br>
+<img width="392" alt="Screenshot 2023-03-30 at 5 17 04 PM" src="https://user-images.githubusercontent.com/82818412/228966481-5470144f-054f-498e-99da-f8e2bc7f4ba5.png">
+
 ## Database Information
 The name of the database is ns_21482_4.
