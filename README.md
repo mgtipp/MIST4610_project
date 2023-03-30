@@ -13,7 +13,11 @@ We are team 21482_4. <br>
 Our group created a data model for the inventory management system of a Target store. For each Target store, we wanted to be able to track the current inventory in stock and the information about the product, the product description, the product type, and the location of each product within each store. In addition, our data model shows the process of each Target store restocking their inventory tracking the information on each purchase order, the order details, the shipment, the supplier of each product, and the distribution center it ships from. 
 
 ## Data Model
-<img width="643" alt="Screenshot 2023-03-27 at 4 01 33 PM" src="https://user-images.githubusercontent.com/82818412/228053365-1a7b0abc-60f4-4033-8270-cee07b2c1290.png">
+<img width="630" alt="Screenshot 2023-03-30 at 8 30 32 AM" src="https://user-images.githubusercontent.com/82818412/228836415-b5004413-b7e9-4e43-9171-572034d411b4.png">
+
+### Data Model Explanation <br>
+The Target inventory data model starts with an instance of the TargetStore entity, which represents a single Target store. A TargetStore instance can have many Employees, but an Employee can only work at one TargetStore. When a TargetStore gets new inventory, it comes in a shipment. A TargetStore can have many shipments, and a shipment can be delivered to many TargetStores. This creates the associative entity PurchaseOrder, which contains information about the purchaser and when the order was purchased. Further, a Supplier facilitates these Shipments, and gathers the products ordered from their Warehouses. So, a Supplier can have many Shipments, but a Shipment may only have one supplier. Similarly, a Supplier can have many Warehouses, but a Warehouse can only belong to one Supplier. <br> <br>
+Since inventory is being considered here, a Products entity exists. These Products can be stored in many TargetStore instances, and a TargetStore can have many Products. This creates an associative entity called Inventory, which keeps track of how many Products are currently in stock and the maximum number of Products that can be stored in that TargetStore. Similarly, Products can belong to many PurchaseOrder instances, and a PurchaseOrder can contain many Products, creating another associative entity called OrderDetails. This entity specifies the quantity of Products ordered and how much each Product costed. Lastly, Products can belong to many ProductTypes, and a ProductType can belong to many Products, creating the ProductLocation associative entity. This details where exactly that Product is in the TargetStore using the aisle name and aisle number specifications.
 
 ## Data Dictionary
 Table: <b>Employee</b>
@@ -75,7 +79,7 @@ Table: <b>PurchaseOrder</b>
 | shipmentID | Unique sequential number identifying each shipment | INT | | | FK (ref. Shipment) |
 | purchaserName | The first and last name of the purchaser | VARCHAR | 45 |
 | purchaserContact | The purchaser's primary phone number | VARCHAR | 45 | (999)999-9999 |
-| orderDate | The date the purchase was ordered | DATETIME | | YYYY/MM/DD |
+| orderDate | The date the purchase was ordered | DATETIME | | MM/DD/YYYY |
 
 Table: <b>Shipment</b>
 | Name  | Description   | Data Type     | Size          | Format | Key |
@@ -83,8 +87,8 @@ Table: <b>Shipment</b>
 | shipmentID | Unique sequential number identifying each shipment | INT | | | PK |
 | supplierID | Unique sequential number identifying each supplier | INT | | | FK (ref. Supplier) |
 | shipmentName | The name of the shipment | VARCHAR | 45 |
-| dateShipped | The date the order was shipped | DATETIME | | YYYY/MM/DD |
-| expectedDelivery | The expected delivery date | DATETIME | | YYYY/MM/DD |
+| dateShipped | The date the order was shipped | DATETIME | | MM/DD/YYYY |
+| expectedDelivery | The expected delivery date | DATETIME | | MM/DD/YYYY |
   
 Table: <b>Supplier</b>
 | Name  | Description   | Data Type     | Size          | Format | Key |
