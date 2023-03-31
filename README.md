@@ -21,6 +21,7 @@ The next associative entity we created was “PurchaseOrder”. This table conne
 The data model also contains information about who the shipments are sent from. The data model does this by having the table “Supplier” which contains the name and number of the supplier.  This table is then a foreign key in the tables “Shipment” and Warehouse”.  “Shipment” contains information about the shipment ID, name, date shipped , and when it is expected to arrive.  “Warehouse” contains information about the address of the warehouse and its phone number and capacity.
 <br> <br>
 Lastly, in order to run a store like target employees are necessary. We created an employee table in order to keep track of the employees at the stores as this is essential to run a business. 
+<br> <br>
 
 ## Data Model
 <img width="630" alt="Screenshot 2023-03-30 at 8 30 32 AM" src="https://user-images.githubusercontent.com/82818412/228836415-b5004413-b7e9-4e43-9171-572034d411b4.png">
@@ -28,6 +29,9 @@ Lastly, in order to run a store like target employees are necessary. We created 
 ### Data Model Explanation <br>
 The Target inventory data model starts with an instance of the TargetStore entity, which represents a single Target store. A TargetStore instance can have many Employees, but an Employee can only work at one TargetStore. When a TargetStore gets new inventory, it comes in a shipment. A TargetStore can have many shipments, and a shipment can be delivered to many TargetStores. This creates the associative entity PurchaseOrder, which contains information about the purchaser and when the order was purchased. Further, a Supplier facilitates these Shipments, and gathers the products ordered from their Warehouses. So, a Supplier can have many Shipments, but a Shipment may only have one supplier. Similarly, a Supplier can have many Warehouses, but a Warehouse can only belong to one Supplier. <br> <br>
 Since inventory is being considered here, a Products entity exists. These Products can be stored in many TargetStore instances, and a TargetStore can have many Products. This creates an associative entity called Inventory, which keeps track of how many Products are currently in stock and the maximum number of Products that can be stored in that TargetStore. Similarly, Products can belong to many PurchaseOrder instances, and a PurchaseOrder can contain many Products, creating another associative entity called OrderDetails. This entity specifies the quantity of Products ordered and how much each Product costed. Lastly, Products can belong to many ProductTypes, and a ProductType can belong to many Products, creating the ProductLocation associative entity. This details where exactly that Product is in the TargetStore using the aisle name and aisle number specifications.
+
+### Data Model Improvements
+Adding the Supplier and warehouse entities improved our model and business productivity as we were able to analyze the data that comes from not just in house and our shipment orders but also the separate entities of our suppliers and warehouse. We are able to deeper analyze where and how we receive our shipments. It can improve our cycle time and communication errors with the data for these on file for easy and convenient access. It is important to consider supply chain cycle time as there have been many supply issues arising post covid. Things have not run as smoothly but having the data available can smooth out some of these issues. 
 
 ## Data Dictionary
 Table: <b>Employee</b>
@@ -186,4 +190,4 @@ Return the cost of each order detail and display when each order was placed. <br
 <img width="238" alt="Screenshot 2023-03-31 at 10 30 11 AM" src="https://user-images.githubusercontent.com/82818412/229149054-a67974cb-c483-46dd-a272-6f849c953410.png">
 
 ## Database Information
-The name of the database is ns_21482_4.
+The name of the database is ns_21482_4, and the procedures are named in the format TP_Qx where x is the query number.
