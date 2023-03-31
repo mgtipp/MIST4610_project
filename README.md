@@ -155,5 +155,35 @@ Return the purchaser name, date ordered, and total price for those orders that w
 <img width="640" alt="Screenshot 2023-03-30 at 5 16 46 PM" src="https://user-images.githubusercontent.com/82818412/228966431-e895e644-b4c7-4ae3-9bf3-16aa3dfffbe1.png"> <br>
 <img width="392" alt="Screenshot 2023-03-30 at 5 17 04 PM" src="https://user-images.githubusercontent.com/82818412/228966481-5470144f-054f-498e-99da-f8e2bc7f4ba5.png">
 
+### TP_Q6
+Return the average cost for a purchase order. <br>
+<b>Justification:</b> Knowing the average cost of purchase orders can be important information for each store for accounting purposes and estimating costs of restocking. The ability to know on how much, on average, each purchase order costs is helpful for planning. <br> <br>
+<img width="733" alt="Screenshot 2023-03-31 at 10 24 00 AM" src="https://user-images.githubusercontent.com/82818412/229147453-ffc89818-30fc-432c-a947-f0e744a0263c.png"> <br>
+<img width="265" alt="Screenshot 2023-03-31 at 10 24 19 AM" src="https://user-images.githubusercontent.com/82818412/229147516-f748df0a-8e8e-4c81-b310-672c0e80b181.png">
+
+### TP_Q7
+Return the count of the number of orders this month (March 2023). <br>
+<b>Justification:</b> Knowing the amount of orders per month can be very important for understanding future demand. The manager needs to know how much inventory to order based on demand data. <br> <br>
+<img width="457" alt="Screenshot 2023-03-31 at 10 25 04 AM" src="https://user-images.githubusercontent.com/82818412/229147696-4717eec1-a6f1-485f-bd43-1942bd6f4cc4.png"> <br>
+<img width="244" alt="Screenshot 2023-03-31 at 10 25 20 AM" src="https://user-images.githubusercontent.com/82818412/229147760-82eafaef-a69c-4469-8926-2545a6d1d4c8.png">
+
+### TP_Q8
+Return capacity of the warehouse where Apple Inc is the supplier. <br>
+<b>Justification:</b> Knowing the capacity of a given Target supplier is important so Target can know how much product they are capable of ordering on a given day and time. <br> <br>
+<img width="477" alt="Screenshot 2023-03-31 at 10 26 49 AM" src="https://user-images.githubusercontent.com/82818412/229148139-be94cc16-75d2-4745-a161-3f85bc36a795.png"> <br>
+<img width="170" alt="Screenshot 2023-03-31 at 10 27 03 AM" src="https://user-images.githubusercontent.com/82818412/229148203-7ccd0d42-62af-4b59-b3f1-d921cb91c6cb.png">
+
+### TP_Q9
+Return the Store ID, address, and phone number where the date shipped is after September 1, 2022. <br>
+<b>Justification:</b> This may be necessary if a malfunction has been found in products after they have already been shipped and delivered. The contact information and location of the stores where faulty products have been sent would be needed to make sure the faulty product can be properly recalled. <br> <br>
+<img width="547" alt="Screenshot 2023-03-31 at 10 27 51 AM" src="https://user-images.githubusercontent.com/82818412/229148420-3830aef1-5dce-4719-8225-f37c27882d8d.png"> <br>
+<img width="318" alt="Screenshot 2023-03-31 at 10 29 04 AM" src="https://user-images.githubusercontent.com/82818412/229148733-07b10090-a8d5-4953-9461-e22ae7f4de97.png">
+
+### TP_Q10
+Return the cost of each order detail and display when each order was placed. <br>
+<b>Justification:</b> Knowing the cost of each order and when it placed can be helpful for tracking costs of orders placed as well as the timeline of how long orders take from when the store is placing an order to when it arrives. <br> <br>
+<img width="1069" alt="Screenshot 2023-03-31 at 10 29 46 AM" src="https://user-images.githubusercontent.com/82818412/229148933-9e82afdd-dbe7-467f-bac9-d805508a7cbd.png"> <br>
+<img width="238" alt="Screenshot 2023-03-31 at 10 30 11 AM" src="https://user-images.githubusercontent.com/82818412/229149054-a67974cb-c483-46dd-a272-6f849c953410.png">
+
 ## Database Information
 The name of the database is ns_21482_4.
