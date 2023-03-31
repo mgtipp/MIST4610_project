@@ -136,10 +136,10 @@ Return the name, date shipped, and expected delivery date of all shipments and t
 <img width="495" alt="Screenshot 2023-03-30 at 4 51 17 PM" src="https://user-images.githubusercontent.com/82818412/228961479-30999b76-b916-4ac8-b77b-22a87d36e7cb.png">
 
 ### TP_Q2
-Return the overall average MSRP of all products where the product type is Electronics. <br>
-<b>Justification:</b> It’s important for a manager to know this information so they can see what the customer is paying on average for an electronic product. They could possibly compare this average price to that of competitors to see if they are pricing their products competitively or not. <br> <br>
-<img width="572" alt="Screenshot 2023-03-30 at 4 49 21 PM" src="https://user-images.githubusercontent.com/82818412/228961089-17c37831-c162-4027-b871-02acda0e3a26.png"> <br>
-<img width="215" alt="Screenshot 2023-03-30 at 4 51 40 PM" src="https://user-images.githubusercontent.com/82818412/228961569-2487d4ca-e79e-4c66-aac8-937d18f3dc55.png">
+Return the product name and MSRP of products where the MSRP is higher than the average MSRP for all products. <br>
+<b>Justification:</b> It’s important for a manager to know this information which products they are selling for the most profit. They could possibly compare these price to that of competitors to see if they are pricing their products competitively or not. <br> <br>
+<img width="588" alt="Screenshot 2023-03-31 at 2 01 35 PM" src="https://user-images.githubusercontent.com/82818412/229195768-fe06d762-7d00-4a0f-a504-b6cca8656ae1.png"> <br>
+<img width="259" alt="Screenshot 2023-03-31 at 2 01 49 PM" src="https://user-images.githubusercontent.com/82818412/229195887-fbfa37ea-a075-492d-aa31-103094e9cf79.png">
 
 ### TP_Q3
 Return the name and phone number of employees who are managers or assistant managers, and return the address of the Target store at which they work. <br>
@@ -150,14 +150,14 @@ Return the name and phone number of employees who are managers or assistant mana
 ### TP_Q4
 Return the total cost of restocking items for all stores. <br>
 <b>Justification:</b> In order for the store to properly make financial budgets and set goals for the year it is useful to know what the total expenses related to inventory will be. An upper manager could use this data in order to forecast. <br> <br>
-<img width="836" alt="Screenshot 2023-03-30 at 5 11 14 PM" src="https://user-images.githubusercontent.com/82818412/228965449-0b6d8864-d4c0-4c01-9673-2e639e69f558.png"> <br>
-<img width="302" alt="Screenshot 2023-03-30 at 5 11 58 PM" src="https://user-images.githubusercontent.com/82818412/228965589-b3bce076-67eb-4456-9ac9-789a4206ebe7.png">
+<img width="999" alt="Screenshot 2023-03-31 at 2 05 21 PM" src="https://user-images.githubusercontent.com/82818412/229196527-4f4da54c-f979-4a67-8668-a6b673e88fad.png"> <br>
+<img width="280" alt="Screenshot 2023-03-31 at 2 05 37 PM" src="https://user-images.githubusercontent.com/82818412/229196574-79d1cf6b-725b-48df-b82f-27931762e78d.png">
 
 ### TP_Q5
 Return the purchaser name, date ordered, and total price for those orders that were purchased for more than $500. <br>
 <b>Justification:</b> It's important for an upper level Target manager to see which purchasers are spending the most money so that they can attempt to cut costs at those stores and make larger profits. <br> <br>
-<img width="640" alt="Screenshot 2023-03-30 at 5 16 46 PM" src="https://user-images.githubusercontent.com/82818412/228966431-e895e644-b4c7-4ae3-9bf3-16aa3dfffbe1.png"> <br>
-<img width="392" alt="Screenshot 2023-03-30 at 5 17 04 PM" src="https://user-images.githubusercontent.com/82818412/228966481-5470144f-054f-498e-99da-f8e2bc7f4ba5.png">
+<img width="814" alt="Screenshot 2023-03-31 at 2 06 12 PM" src="https://user-images.githubusercontent.com/82818412/229196683-6bf3672b-edd7-484e-947d-14887c7c79d5.png"> <br>
+<img width="390" alt="Screenshot 2023-03-31 at 2 06 30 PM" src="https://user-images.githubusercontent.com/82818412/229196778-c58cbded-92d1-4e74-981c-d5e8e01b0da8.png">
 
 ### TP_Q6
 Return the average cost for a purchase order. <br>
